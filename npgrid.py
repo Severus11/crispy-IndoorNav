@@ -44,15 +44,15 @@ grid = np.array([
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 
 #xs = str (input ("Enter starting coordinates: "))
-#ls = xs.split (",")
+ls = xs.split (",")
 #start = []
 #for i in ls:
-#	start.append(i)
-#xg = str (input ("Enter final coordinates: "))
-#lg = xg.split (",")
-#goal = []
-#for i in lg:
-#	goal.append(i)
+	start.append(i)
+xg = str (input ("Enter final coordinates: "))
+lg = xg.split (",")
+goal = []
+for i in lg:
+	goal.append(i)
 
 
 
