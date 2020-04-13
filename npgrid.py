@@ -56,10 +56,10 @@ for i in lg:
 
 
 
-start = (0,0)
-goal= (9,15)
-fig, ax= plt.subplots(figsize=(12,12))
-ax.imshow(grid, cmap=plt.cm.Dark2)
+#start = (0,0)
+#goal= (9,15)
+#fig, ax= plt.subplots(figsize=(12,12))
+##ax.imshow(grid, cmap=plt.cm.Dark2)
 ax.scatter(start[1],start[0], marker = "*", color = "yellow", s = 200)
 ax.scatter(goal[1],goal[0], marker = "*", color = "red", s = 200)
 plt.show()
