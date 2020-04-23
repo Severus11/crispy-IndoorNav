@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
-img = cv2.imread("test.png")
+img = cv2.imread("/home/severus7/Documents/python/test.png")
 
 r1 = np.array([0,0,0])
 r2 = np.array([10,10,10])
