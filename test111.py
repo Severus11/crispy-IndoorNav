@@ -1,16 +1,11 @@
-import cv2
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import figure
+import cv2
 import final_npGrid
 import heapq
-
-img = cv2.imread("/home/severus7/Documents/python/test.png")
-
-grid= final_npGrid.main()
-start = (420,350)
+#import npgrid
+grid = final_npGrid.main()
+start=(420, 350)
 goal= (98,86)
-
 def heuristic(a,b):
     return np.sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
 
@@ -54,3 +49,9 @@ def a_search(array,start, goal):
 
 route= a_search(grid, start, goal)
 print(route)
+
+
+
+
+
+

@@ -46,7 +46,8 @@ def npGrid():
     ax.imshow(grid, aspect ='auto', cmap=plt.get_cmap('binary'))
     ax.scatter(start[1],start[0], marker = "*", color = "yellow", s = 200)
     ax.scatter(goal[1],goal[0], marker = "*", color = "red", s = 200)
-    plt.show()
+    #plt.show()
+    print(grid)
 
 def main():
     #img = cv2.imread("/home/severus7/Documents/python/test.png")
