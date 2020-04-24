@@ -40,13 +40,19 @@ def npGrid():
     
     grid = np.array(elements)
 
+
+
+
+
+
+
     start = (420,350)
     goal= (98,86)
     fig, ax= plt.subplots(figsize=(12,12))
     ax.imshow(grid, aspect ='auto', cmap=plt.get_cmap('binary'))
     ax.scatter(start[1],start[0], marker = "*", color = "yellow", s = 200)
     ax.scatter(goal[1],goal[0], marker = "*", color = "red", s = 200)
-    #plt.show()
+    plt.show()
     print(grid)
 
 def main():

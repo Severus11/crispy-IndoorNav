@@ -44,6 +44,7 @@ grid = np.array([
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 start=(0,0)
 goal= (9,15)
+
 def heuristic(a,b):
     return np.sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
 
