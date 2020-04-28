@@ -41,7 +41,7 @@ def solution_send(bot, update):
 
         
 def main():
-    updater = Updater('992548270:AAHJoNHglIM5Ue4P_Ue0qrUombVuRwzVins')
+    updater = Updater('your key here')
     dp = updater.dispatcher
     dp.add_handler(MessageHandler(Filters.all, some_func))
     #final_npGrid()
