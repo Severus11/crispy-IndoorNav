@@ -3,31 +3,28 @@ import numpy as np
 import heapq
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+#try making it all one function
 
-img = cv2.imread("wassup.jpeg")
 
 
-img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-ret, img= cv2.threshold(img,125,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (4, 3))
-img = cv2.erode(img, kernel, iterations=3)
-dilated_Edges = cv2.dilate(img, kernel, iterations=2)
+def imgop(image):
+    image = cv2.imread(image)
+    img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    ret, img= cv2.threshold(img,125,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (4, 3))
+    img = cv2.erode(img, kernel, iterations=3)
+    dilated_Edges = cv2.dilate(img, kernel, iterations=2)
 
-width= 800
-height = 800
-dim=(width, height)
+    width= 800
+    height = 800
+    dim=(width, height)
 
-img= cv2.resize(img,dim , interpolation= cv2.INTER_AREA)
+    img= cv2.resize(img,dim , interpolation= cv2.INTER_AREA)
 
-start = (420,350)
-goal= (98,86)
+    start = (420,350)
+    goal= (98,86)
 
     #print(grid)
-
-
-
-
-
 elements=[]
 for i in range(0,800):
     elements.append([])
@@ -41,7 +38,7 @@ for i in range(0,800):
         else:
             val =0
             elements[i].append(val)
-    
+
 grid = np.array(elements)
 
 
@@ -90,7 +87,7 @@ def a_search(array,start, goal):
 
 def main():
     #img = cv2.imread("/home/severus7/Documents/python/test.png")
-
+    
     route= a_search(grid, start, goal)
     print(route)
 
@@ -108,6 +105,7 @@ def main():
     #plt.show()
     ax.plot(yc,xc, color = "black")
     plt.show()
+    plt.savefig('hero.jpg')
 
 
 if __name__== "__main__":
