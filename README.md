@@ -35,4 +35,18 @@ $ pip3 install -r requirements.txt
 - Edit the output map style, representation of path and color for ease of usage.
 
 ### Sample Output:
+- Input Image
+![Input map](wassup.jpeg)
 
+- Output Image with shortest path mapped
+![Navigation](hero.png)
+
+- Telegram
+![Navigation t1](Screenshot_20200622-010852.jpg)
+
+![Navigation t2](Screenshot_20200622-010856.jpg)
+
+### Author
+ [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Parthsarthi-blue.svg)](https://www.linkedin.com/in/parthsarthi-gupta-265b9816a)
+
+- Parthsarthi Gupta
