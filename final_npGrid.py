@@ -3,8 +3,9 @@ import numpy as np
 import heapq
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+<<<<<<< HEAD
 
-img = cv2.imread("wassup.jpeg")
+img = cv2.imread("/home/severus7/Documents/python/test.png")
 
 
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -28,6 +29,30 @@ goal= (98,86)
 
 
 
+=======
+#try making it all one function
+
+
+
+def imgop(image):
+    image = cv2.imread(image)
+    img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    ret, img= cv2.threshold(img,125,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (4, 3))
+    img = cv2.erode(img, kernel, iterations=3)
+    dilated_Edges = cv2.dilate(img, kernel, iterations=2)
+
+    width= 800
+    height = 800
+    dim=(width, height)
+
+    img= cv2.resize(img,dim , interpolation= cv2.INTER_AREA)
+
+    start = (420,350)
+    goal= (98,86)
+
+    #print(grid)
+>>>>>>> 8cd37b2dcdc89e7fe052d3c3ad79ab4ae299e92b
 elements=[]
 for i in range(0,800):
     elements.append([])
@@ -41,7 +66,11 @@ for i in range(0,800):
         else:
             val =0
             elements[i].append(val)
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8cd37b2dcdc89e7fe052d3c3ad79ab4ae299e92b
 grid = np.array(elements)
 
 
@@ -90,7 +119,11 @@ def a_search(array,start, goal):
 
 def main():
     #img = cv2.imread("/home/severus7/Documents/python/test.png")
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8cd37b2dcdc89e7fe052d3c3ad79ab4ae299e92b
     route= a_search(grid, start, goal)
     print(route)
 
@@ -106,8 +139,15 @@ def main():
     ax.scatter(start[1],start[0], marker = "*", color = "yellow", s = 200)
     ax.scatter(goal[1],goal[0], marker = "*", color = "red", s = 200)
     #plt.show()
+<<<<<<< HEAD
+    ax.plot(yc,xc, color = "green", linewidth=4)
+    plt.show()
+    fig.savefig('hero.png')
+=======
     ax.plot(yc,xc, color = "black")
     plt.show()
+    plt.savefig('hero.jpg')
+>>>>>>> 8cd37b2dcdc89e7fe052d3c3ad79ab4ae299e92b
 
 
 if __name__== "__main__":
