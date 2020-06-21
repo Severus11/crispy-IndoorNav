@@ -1,0 +1,4 @@
+python -opencv==3.4.17.0
+numpy==1.14
+urllib.request
+python-telegram-bot==12.7
