@@ -15,7 +15,7 @@ It is supported by a telegram bot service so that it can be accessed by anyone, 
 ### Cloning
 Use the link below to close this repository to your machine.
 ```
-https://github.com/Severus11/Crispy-IndoorNav.git
+https://github.com/Severus11/crispy-IndoorNav.git
 ```
 ### Pre-requisites 
 These are the required dependencies needed to setup the environment
