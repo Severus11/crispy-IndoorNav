@@ -10,7 +10,8 @@ It is supported by a telegram bot service so that it can be accessed by anyone, 
 [![OpenCV 3.4.1.15](https://img.shields.io/badge/OpenCV-version%203.4-orange.svg)](https://pypi.org/project/opencv-python/)
 [![Python- Telegram- Bot 12.7](https://img.shields.io/badge/Telegram%20-version%2012.7-blue.svg)](https://pypi.org/project/python-telegram-bot/)
 [![Release Version](https://img.shields.io/badge/Release%20-version%200.1.2-red.svg)](https://pypi.org/project/python-telegram-bot/)
- [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Parthsarthi-blue.svg)](https://www.linkedin.com/in/parthsarthi-gupta-265b9816a)
+
+
 
 ### Cloning
 Use the link below to close this repository to your machine.
